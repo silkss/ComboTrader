@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connectors", "Connectors\Co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComboTraderCui", "ComboTraderCui\ComboTraderCui.csproj", "{3FAEA2DB-ED63-4B24-B027-A8CD51F69352}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboTraderGui", "ComboTraderGui\ComboTraderGui.csproj", "{67C31EC8-438F-4233-9628-AE629F71FC37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3FAEA2DB-ED63-4B24-B027-A8CD51F69352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FAEA2DB-ED63-4B24-B027-A8CD51F69352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FAEA2DB-ED63-4B24-B027-A8CD51F69352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67C31EC8-438F-4233-9628-AE629F71FC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67C31EC8-438F-4233-9628-AE629F71FC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67C31EC8-438F-4233-9628-AE629F71FC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67C31EC8-438F-4233-9628-AE629F71FC37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

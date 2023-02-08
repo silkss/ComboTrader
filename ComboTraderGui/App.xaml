@@ -1,0 +1,56 @@
+﻿<Application x:Class="ComboTraderGui.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ComboTraderGui"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:types="clr-namespace:ComboTraderGui.Types"
+             xmlns:connectors_types="clr-namespace:Connectors.Types;assembly=Connectors"
+             
+             StartupUri="Views/MainView.xaml">
+    <Application.Resources>
+        
+        <FontFamily x:Key="BaseFontFamily">Segoe UI</FontFamily>
+        <sys:Double x:Key="BaseFontSize">14</sys:Double>
+        
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="FontFamily" Value="{StaticResource BaseFontFamily}"/>
+            <Setter Property="FontSize" Value="{StaticResource BaseFontSize}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="2"/>
+        </Style>
+        
+        <Style TargetType="ComboBox" >
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="FontFamily" Value="{StaticResource BaseFontFamily}"/>
+            <Setter Property="FontSize" Value="{StaticResource BaseFontSize}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="FontFamily" Value="{StaticResource BaseFontFamily}"/>
+            <Setter Property="FontSize" Value="{StaticResource BaseFontSize}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="FontFamily" Value="{StaticResource BaseFontFamily}"/>
+            <Setter Property="FontSize" Value="{StaticResource BaseFontSize}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+
+
+        <DataTemplate DataType="{x:Type connectors_types:Option}">
+            <TextBlock>
+                <TextBlock.Text>
+                    <MultiBinding StringFormat="{}{0} {1}">
+                        <Binding Path="OptionType"/>
+                        <Binding Path="Strike"/>
+                    </MultiBinding>
+                </TextBlock.Text>
+            </TextBlock>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
